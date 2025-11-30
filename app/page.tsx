@@ -7,6 +7,7 @@ import { Header, Footer } from '@/components/common';
 import { HomePage } from './HomePage';
 import { CreatePollPage } from './CreatePollPage';
 import { PollDetailPage } from './PollDetailPage';
+import { ResultsPage } from './ResultsPage';
 
 export default function App() {
     // Backend data layer
@@ -84,6 +85,9 @@ export default function App() {
                         onVote={votePoll}
                         onBack={() => handleNavigate('list')}
                     />
+                )}
+                {view === 'results' && (
+                    <ResultsPage polls={polls} />
                 )}
             </main>
 

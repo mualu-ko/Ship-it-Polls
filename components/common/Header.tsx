@@ -30,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
                 <div className="w-6 h-6 bg-black rounded-sm mr-2 flex items-center justify-center">
                     <BarChart2 className="text-white w-4 h-4" />
                 </div>
-                <span className="text-xl font-bold tracking-tight text-black">PollMaster</span>
+                <span className="text-xl font-bold tracking-tight text-black">PollMasters</span>
             </div>
 
             {/* Desktop Navigation */}
@@ -45,7 +45,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
                     Vote
                 </button>
                 <button
-                    onClick={() => handleNavigate('list')}
+                    onClick={() => handleNavigate('results')}
                     className="text-gray-600 hover:text-black font-medium transition"
                 >
                     Results
@@ -75,6 +75,12 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
                         className="text-left font-medium hover:text-gray-600 transition"
                     >
                         Home
+                    </button>
+                    <button
+                        onClick={() => handleNavigate('results')}
+                        className="text-left font-medium hover:text-gray-600 transition"
+                    >
+                        Results
                     </button>
                     <button
                         onClick={() => handleNavigate('create')}

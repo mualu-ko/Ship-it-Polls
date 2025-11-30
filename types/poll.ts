@@ -5,7 +5,7 @@
 export type OptionId = string;
 export type PollId = string;
 export type UserId = string;
-export type ViewType = 'list' | 'create' | 'detail';
+export type ViewType = 'list' | 'create' | 'detail' | 'results';
 
 export interface PollOption {
     id: OptionId;
